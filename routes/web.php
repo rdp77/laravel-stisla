@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome')->name('home');
+
+Route::view('dashboard', 'dashboard')
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+
+Route::view('profile', 'pages.user.profile')
+    ->middleware(['auth'])
+    ->name('profile');
+
+Route::view('settings', 'pages.user.settings')
+    ->middleware(['auth'])
+    ->name('settings');
+
+Route::view('credits', 'pages.extras.credits')
+    ->middleware(['auth'])
+    ->name('credits');
+
+require __DIR__.'/auth.php';
