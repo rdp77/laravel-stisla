@@ -5,6 +5,7 @@
  */
 
 import axios from 'axios';
+
 window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -30,3 +31,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
 // });
+
+/**
+ * Custom Import
+ */
+
+import jQuery from 'jquery';
+
+window.jQuery = window.$ = jQuery;
+
+import 'bootstrap';
+import 'jquery.nicescroll/dist/jquery.nicescroll.js';
+import 'moment/dist/moment.js';
+import './stisla.js';
+import './scripts.js';
