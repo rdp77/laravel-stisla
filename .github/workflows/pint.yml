@@ -3,7 +3,7 @@ name: Check & Fix Styling
 on:
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - '**.php'
 
