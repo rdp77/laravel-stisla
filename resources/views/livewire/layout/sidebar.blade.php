@@ -1,10 +1,10 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('home') }}">Laravel Stisla</a>
+            <a href="javascript:void(0)">Laravel Stisla</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="{{ route('home') }}">LS</a>
+            <a href="javascript:void(0)">LS</a>
         </div>
         <ul class="sidebar-menu">
             <li>

@@ -37,11 +37,11 @@ new #[Layout('layouts.auth')] class extends Component {
 
         <!-- Email Address -->
         <div class="form-group">
-            <x-form.input.label-input for="email" :value="__('Email')"/>
-            <x-form.input.text-input wire:model="form.email" id="email" type="email" name="email" tabindex="1"
-                                     required autofocus autocomplete="username" errorKey="email"/>
-            @error('email')
-            <x-form.input.error-input :messages="$errors->get('email')"/>
+            <x-form.input.label-input for="identity" :value="__('Username or Email')"/>
+            <x-form.input.text-input wire:model="form.identity" id="identity" type="text" name="identity" tabindex="1"
+                                     required autofocus autocomplete="identity" errorKey="identity"/>
+            @error('identity')
+            <x-form.input.error-input :messages="$errors->get('identity')"/>
             @enderror
         </div>
 
