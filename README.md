@@ -50,23 +50,44 @@ Make sure all dependencies have been installed before moving on:
 - [Node.js](http://nodejs.org/) >= 18
 - [pnpm](https://pnpm.io/installation) (Optional)
 
-## Quick start
+## Getting Started
 
-Several quick start options are available:
+Start by creating the project using Composer and configuring the `.env` file:
 
-- Clone the repo: `git clone https://github.com/rdp77/laravel-stisla.git`
-- Run `cd` to the newly created `/laravel-stisla` directory
-- Run `composer install` command
-- Run `npm install` command
-- Run `npm run dev` command
-- Run `php artisan serve` command
-- Done
+```sh
+composer create-project rdp77/laravel-stisla:dev-main
+cd laravel-stisla
+```
 
-> [!NOTE]  
-> if you have another package manager you can use that.
+After `.env` is configured, you can proceed to migrate & seed the database:
 
-Read the [documentation page](https://getstisla.com/docs) for more information on the framework contents, templates and
-examples, and more.
+```sh
+php artisan migrate:fresh --seed
+```
+
+Once the database is seeded, you can login at `/login or /` using the default admin user:
+
+```yaml
+Username: admin
+Password: admin
+```
+
+### Build Assets
+
+The project assets are compiled using Vite. This can be done by installing the dependencies and running the build
+command with Yarn.
+
+```sh
+yarn install
+yarn build
+```
+
+or
+
+```sh
+pnpm install
+pnpm build
+```
 
 ## Plugins Used
 
