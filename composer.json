@@ -3,7 +3,16 @@
     "type": "project",
     "description": "Free Bootstrap Admin Template Stisla for Laravel.",
     "keywords": ["laravel", "framework", "admin-dashboard", "stisla"],
+    "homepage": "https://github.com/rdp77/laravel-stisla",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Moh Ravi Dwi Putra",
+            "email": "hi@ravidwiputra.web.id",
+            "homepage": "https://ravidwiputra.web.id",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
